@@ -1,0 +1,238 @@
+/* for (var i = 0; i < data.length; i++){
+    for (var j = greekVocab.length - 1; i >= 0; i--) {
+  if (${data[i]["Meaning (Moore College course)"] === "I seek") { 
+      ${data[i]["Meaning (Moore College course)"].splice(i, 1);
+  } */
+
+// maybe, if row value is "I seek", hide it. Otherwise, show it. Can use this later for filtering out by year/semester. 
+
+/*
+
+function buildTableY1S1(data){
+      var table = document.getElementById('myTable')
+
+      for (var i = 0; i < data.length; i++){
+          var row = `<tr>
+                          <td>${data[i]["Greek word"]}</td>
+                          <td>${data[i]["Meaning (Moore College course)"]}</td>
+                          <td>${data[i]["Frequency in NT"]}</td>
+                    </tr>`
+          table.innerHTML += row
+
+     if (${data[i]["Meaning (Moore College course)"].value = "I seek") {
+      ${data[i]["Meaning (Moore College course)"].closest(".item-row").style.visibility = "collapse";
+    } else {
+      ${data[i]["Meaning (Moore College course)"].closest(".item-row").style.visibility = "visible";
+    }
+
+      }
+  }
+
+*/
+
+// var alphabet=["a","b","c","d","e"]; randomArrayShuffle(alphabet); 
+
+
+   /* 
+   $('#goButton')
+  .unbind('click') // takes care of jQuery-bound click events
+  .attr('onclick', '') // clears `onclick` attributes in the HTML
+  .each(function() { 
+    shuffleTable(); 
+    drawTable();
+    onGoButtonClick();// reset `onclick` event handlers
+    this.onclick = null;
+  });
+  */
+
+     //goButton.addEventListener("click", function(){
+    //drawTable();
+    //onGoButtonClick();
+//});
+
+/* var hideTable = function() {
+  $("table").hide();
+};
+
+var showTable = function() {
+  $("table").toggle();
+};
+*/
+
+/*
+var forgetClick = function () {
+  $("#goButton").removeAttr(click);
+};
+
+var refreshButton = function () {
+  $("#button").load(location.href + " #button");
+};
+*/
+
+
+
+/* var drawButton = document.getElementById("drawTable");
+    // 2. Define the function that will respond to the event.
+    // callback 
+    var onDrawButtonClick = function() {
+        drawButton.textContent = "Oh wow, you clicked me!";
+    };
+    // 3. Add the event listener for the element and function
+    // anonymous "inline"
+    drawButton.addEventListener("click", drawTable);
+
+*/
+
+/*
+
+  var shuffleButton = document.getElementById("shuffleTable");
+    // 2. Define the function that will respond to the event.
+    // callback 
+    var onShuffleButtonClick = function() {
+        shuffleButton.textContent = "Oh wow, you clicked me!";
+    };
+    // 3. Add the event listener for the element and function
+    // anonymous "inline"
+    shuffleButton.addEventListener("click", shuffleTable);
+
+*/
+
+/*
+if($("input[type=text]").eq(1).val() === document.getElementById('myTable').rows[2].cells[4].innerHTML) {
+        alert("Hello! I am an alert box!!");
+};
+
+
+alert("Hello! I am an alert box!!");
+
+*/
+/*
+
+$('td:nth-child(5)').keyup(function(event) {
+  text = $(this).val();
+  $("name").text(text);
+});
+$('input').focusout(function(){
+  if(document.getElementById('myTable').rows[2].cells[4].innerHTML.includes($("input[type=text]").eq(1).val())){
+    $("input[type=text]").eq(1).closest("tr").css("background-color","yellow");
+    $("input[type=text]").eq(1).css("background-color","yellow");
+	}
+})
+
+*/
+
+/*
+possible solution... try to identify the location where 'event' happened and apply css changes only on the closest row to the event
+$( "input[type='text']" ).keyup(function() {
+  if($(!this).value.includes(!this.closest("td").innerHTML)) {
+    !this.closest("tr").css("background-color","yellow");
+  }
+});
+*/
+
+/* THIS WORKS TO HIGHLIGHT WHEN CONTAINS THING
+$('td:nth-child(5)').keyup(function(event) {
+  text = $(this).val();
+  $("name").text(text);
+});
+$('input').focusout(function(){
+  if(document.getElementById('myTable').rows[2].cells[4].innerHTML.includes($("input[type=text]").eq(1).val())){
+    $("input[type=text]").eq(1).closest("tr").css("background-color","yellow");
+    $("input[type=text]").eq(1).css("background-color","yellow");
+	}
+})
+*/
+
+
+//SELECT FIRST INPUT = $("input[type=text]").val();
+//SELECT SECOND INPUT = $("input[type=text]").eq(1).val();
+//SELECT FIRST ROW OF ENGLISH WORDS = document.getElementById('myTable').rows[1].cells[4].innerHTML
+
+
+
+
+
+
+
+/*
+
+
+<form>
+    <fieldset id="language">Language
+      <input type="radio" name="language" value="All" All checked="checked"/>All</input>
+      <input type="radio" name="language" value="Greek" />Greek</input>
+      <input type="radio" name="language" value="Hebrew" />Hebrew</input>
+    </fieldset>
+
+    <fieldset id="semesters">Semesters
+        <input type="radio" name="semesters" value="All" All checked="checked"/>All</input>
+        <input type="radio" name="semesters" value="Year 1 | Sem 1"/>Year 1 | Sem 1</input>
+        <input type="radio" name="semesters" value="Year 1 | Sem 2"/>Year 1 | Sem 2</input>
+        <input type="radio" name="semesters" value="Year 2 | Sem 1"/>Year 2 | Sem 1</input>
+        <input type="radio" name="semesters" value="Year 2 | Sem 2"/>Year 2 | Sem 2</input>
+    </fieldset>   
+  </form> 
+
+
+
+
+<body class="flex flex-col items-center py-16 bg-gray-100">
+    <ul id="filter1" class="filter-switch inline-flex items-center relative h-10 p-1 space-x-1 bg-gray-200 rounded-md font-semibold text-blue-600 my-4">
+      <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+        <input type="radio" name="filter1" id="filter1-0" class="sr-only" checked>
+        <label for="filter1-0" class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 bg-white rounded shadow">
+          All
+        </label>
+        <div aria-hidden="true" class="filter-active"></div>
+      </li>
+      <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+        <input type="radio" name="filter1" id="filter1-1" class="sr-only">
+        <label for="filter1-1" class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 bg-white rounded shadow">
+          Greek
+        </label>
+      </li>
+      <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+        <input type="radio" name="filter1" id="filter1-2" class="sr-only">
+        <label for="filter1-2" class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 bg-white rounded shadow">
+          Hebrew
+        </label>
+      </li>
+    </ul>
+  
+    <ul id="filter2" class="filter-switch inline-flex items-center relative h-10 p-1 space-x-1 bg-gray-200 rounded-md font-semibold text-blue-600 my-4 border border-gray-300">
+      <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+        <input type="radio" name="filter2" id="filter2-0" class="sr-only" checked>
+        <label for="filter2-0" class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 bg-white rounded shadow">
+          All
+        </label>
+        <div aria-hidden="true" class="filter-active"></div>
+      </li>
+      <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+        <input type="radio" name="filter2" id="filter2-1" class="sr-only">
+        <label for="filter2-1" class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 bg-white rounded shadow">
+          Year 1 | Sem 1
+        </label>
+      </li>
+      <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+        <input type="radio" name="filter2" id="filter2-2" class="sr-only">
+        <label for="filter2-2" class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 bg-white rounded shadow">
+          Year 1 | Sem 2
+        </label>
+      </li>
+      <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+        <input type="radio" name="filter2" id="filter2-3" class="sr-only">
+        <label for="filter2-3" class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 bg-white rounded shadow">
+          Year 2 | Sem 1
+        </label>
+      </li>
+      <li class="filter-switch-item flex relative h-8 bg-gray-300x">
+        <input type="radio" name="filter2" id="filter2-4" class="sr-only">
+        <label for="filter2-4" class="h-8 py-1 px-2 text-sm leading-6 text-gray-600 hover:text-gray-800 bg-white rounded shadow">
+          Year 2 | Sem 2
+        </label>
+      </li>
+    </ul>
+  
+  </body>
+
+  */

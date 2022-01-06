@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+    
+<title>Biblical Greek: Vocabulary Practice</title>
+
+<head>
+    
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="table2excel.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+
+    <!-- BUTTON CSS STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+
+    <style>
+
+body { 
+            color: rgb(50, 50, 50);
+            background-color: rgb(255, 255, 255);
+            margin-left: 30px;
+            font-family: Noto-sans, sans-serif;
+        }
+
+
+        h1 {
+            font-family: Oswald, sans-serif;
+            font-size: 300%;
+            font-weight: 800; 
+        }
+
+        select {
+            font-family: Noto-sans, sans-serif;
+            padding: 5px; 
+            font-size: 20px;
+        }
+
+        .byverse {
+            font-weight: 100;
+
+        }
+
+        body {
+            width: 90%;
+            margin: 30px;
+
+        }
+
+        tr { 
+    overflow: hidden;
+    height: 50px;
+    white-space: normal;
+}
+
+        table {
+            padding: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .clickverse {
+            cursor: pointer;
+        }
+
+        .webverse {
+            visibility: hidden;
+        }
+
+        .inputverse {
+            visibility: hidden;
+        }
+
+        .webtranslation {
+            color: rgb(66, 106, 214);
+            margin-top: 50px;
+            line-height: 14px;
+        }
+
+        .inputfield { 
+            width: 1000px;
+        }
+
+        .hebrewtext {
+            font-size: xx-large;
+            padding-right: 200px;
+            text-align: right;
+            font-family: "Ezra SIL"; 
+            src: url("//db.onlinewebfonts.com/t/f4d27cce9dfef986c49ac2030e048809.eot");
+
+        }
+
+        .fill {
+            font-size: 15px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 7px 25px 7px;
+            outline: 0;
+            border: 1px solid black;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            }
+
+            .fill:hover::after {
+            top: 0px;
+            left: 0px;
+            }
+
+        .fill::after {
+            content: "";
+            background-color: #ffe54c;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 7px;
+            left: 7px;
+            transition: 0.2s;
+            }
+
+        th {
+            visibility: hidden;
+        }
+
+
+        hr {
+            visibility: hidden;
+        }
+
+        .selectPassage {
+            font-size: 20px;
+            padding: 5px; 
+            font-family: Noto-sans, sans-serif;
+        }
+
+        .englishButtons {
+            margin-left: -30px; 
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            position: sticky;
+            top: 0px;
+            border-style: solid;
+            border-color: #ffe54c;
+            border-left-width: 0px;
+        }
+
+
+        .export::after {
+        background-color: rgb(164, 237, 175);
+        }
+
+
+        .showEnglish { 
+            left: 50%;
+        }
+
+        .hideEnglish { 
+            left: 10%;
+        }
+
+        .searchfield {
+            margin-left: 30px;
+            font-size: large;
+            font-family: Noto-sans, sans-serif;
+        }
+        
+        .search {
+            left: 20px;
+            font-size: large;
+            font-family: Noto-sans, sans-serif;
+        }
+
+        .blueButton {
+                    cursor: pointer;
+                    outline: 0;
+                    color: #fff;
+                    background-color: #0d6efd;
+                    border-color: #0d6efd;
+                    display: inline-block;
+                    font-family: Noto-sans, sans-serif;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    text-align: center;
+                    border: 1px solid transparent;
+                    padding: 6px 12px;
+                    font-size: 16px;
+                    border-radius: .25rem;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        .blueButton:hover {
+                        color: #fff;
+                        background-color: #0b5ed7;
+                        border-color: #0a58ca;
+                    }
+
+                    .activeButton {
+            cursor: pointer;
+                    outline: 0;
+                    color: rgb(0, 0, 0);
+                    background-color: #01004d;
+                    border-color: #002358;
+                    display: inline-block;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    text-align: center;
+                    border: 1px solid transparent;
+                    padding: 6px 12px;
+                    font-size: 16px;
+                    border-radius: .25rem;
+                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+                    a:link {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+                    }
+
+            a:visited {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+}
+       
+                
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Translate <span class="byverse">| verse by verse</span></h1>
+
+    <hr>
+    <hr>
+    <hr>
+
+<select class="dropdown" onchange="location = this.options[this.selectedIndex].value;" name="bibleSelection" id="bibleSelection">
+  <option value="" disabled selected>Select bible section</option>
+  <option value="1 GEN-DEUT_translateversebyverse.html">Genesis - Deuteronomy</option>
+  <option value="2 JOSH-ESTHER_translateversebyverse.html">Joshua - Esther</option>
+  <option value="3 JOB-SOS_translateversebyverse.html">Job - Song of Songs</option>
+  <option value="4 ISA-DAN_translateversebyverse.html">Isaiah - Daniel</option>
+  <option value="5 HOS-MAL_translateversebyverse.html">Hosea - Malachi</option>
+  <option value="6 MAT-ACTS_translateversebyverse.html">Matthew - Acts</option>
+  <option value="7 ROM-REV_translateversebyverse.html">Romans - Revelation</option>
+</select>
+
+
+    
+
+</body>
+
+</html>

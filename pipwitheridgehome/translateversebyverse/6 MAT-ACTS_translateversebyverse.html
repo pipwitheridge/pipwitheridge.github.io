@@ -216,7 +216,49 @@ body {
                     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         }
        
-                
+        @media (max-width: 1000px) {
+
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 30px;
+text-align: center;
+}
+
+.body {
+margin-left: 0px;
+ 
+}
+
+.selectPassage, .or, .dropdown {
+
+}
+
+.topOptions {
+font-family: Noto-sans, sans-serif;
+padding: 0px; 
+font-size: 15px;
+width: 90%;
+position: absolute;
+text-align: center;
+}
+
+
+
+.showEnglish, .hideEnglish, .export, .search, .searchfield, .englishButtons, .inputfield, .clickverse, .webverse { 
+display: none;
+}
+
+.webtranslation {
+color: rgb(66, 106, 214);
+margin-top: 50px;
+line-height: 14px;
+}
+
+
+
+
+}
+     
         
 
     </style>
@@ -231,10 +273,17 @@ body {
     <hr>
     <hr>
 
+    <div class="topOptions">
+
     <input name="chapterSelect" type="text" id="myInput" class="selectPassage" onkeyup="myFunction()" placeholder="Select chapter (e.g. John 3)">
 
-    
+    <br>
+    <br>
+
     <label class="or">or</label>
+
+    <br>
+    <br>
 
     <select class="dropdown" onchange="location = this.options[this.selectedIndex].value;" name="bibleSelection" id="bibleSelection">
   <option value="" disabled selected>Select a different section</option>
@@ -246,6 +295,8 @@ body {
   <option value="" disabled>Matthew - Acts</option>
   <option value="7 ROM-REV_translateversebyverse.html">Romans - Revelation</option>
 </select>
+
+    </div>
 
     
 

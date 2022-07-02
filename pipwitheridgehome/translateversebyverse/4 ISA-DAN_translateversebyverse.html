@@ -217,7 +217,51 @@ body {
         }
        
                 
-        
+        @media (max-width: 1000px) {
+
+h1 {
+font-family: Oswald, sans-serif;
+font-size: 30px;
+text-align: center;
+}
+
+
+
+.selectPassage::after, .or::after, .dropdown::after {
+content:"\a \a";
+white-space: pre;
+}
+
+.selectPassage::before, .or::before, .dropdown::before {
+content:"\a \a";
+white-space: pre;
+}
+
+.topOptions {
+font-family: Noto-sans, sans-serif;
+padding: 0px; 
+font-size: 15px;
+width: 90%;
+position: absolute;
+text-align: center;
+}
+
+
+
+.showEnglish, .hideEnglish, .export, .search, .searchfield, .englishButtons, .inputfield, .clickverse, .webverse { 
+display: none;
+}
+
+.webtranslation {
+color: rgb(66, 106, 214);
+margin-top: 50px;
+line-height: 14px;
+}
+
+
+
+
+}
 
     </style>
 
@@ -230,6 +274,8 @@ body {
     <hr>
     <hr>
     <hr>
+
+    <div class="topOptions">
 
     <input name="chapterSelect" type="text" id="myInput" class="selectPassage" onkeyup="myFunction()" placeholder="Select chapter (e.g. Isaiah 53)">
 
@@ -246,6 +292,8 @@ body {
   <option value="6 MAT-ACTS_translateversebyverse.html">Matthew - Acts</option>
   <option value="7 ROM-REV_translateversebyverse.html">Romans - Revelation</option>
 </select>
+
+    </div>
 
     
 

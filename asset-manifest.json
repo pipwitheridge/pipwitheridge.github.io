@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7741d6c3.css",
+    "main.js": "/static/js/main.95e34ea5.js",
+    "static/js/419.28c76944.chunk.js": "/static/js/419.28c76944.chunk.js",
+    "static/js/443.926d9d82.chunk.js": "/static/js/443.926d9d82.chunk.js",
+    "static/js/255.cf42ae83.chunk.js": "/static/js/255.cf42ae83.chunk.js",
+    "static/media/homelessnessInAustralia.png": "/static/media/homelessnessInAustralia.a6fc24f4e2aa42521316.png",
+    "static/media/briefHistoryOfTimeWide.png": "/static/media/briefHistoryOfTimeWide.8ac4fd786a202c055cc5.png",
+    "static/media/salKhan.png": "/static/media/salKhan.da3e34ff3571b7727426.png",
+    "static/media/homelessnessInAustraliaWide.png": "/static/media/homelessnessInAustraliaWide.e25d1c0bf9f7c4b429cb.png",
+    "static/media/salKhanWide.png": "/static/media/salKhanWide.a965da0faee34a7414c5.png",
+    "static/media/briefHistoryOfTime.png": "/static/media/briefHistoryOfTime.ce649d920b9e020670b1.png",
+    "static/media/howTheWorldReallyWorks.jpg": "/static/media/howTheWorldReallyWorks.9e65524c779302d96e37.jpg",
+    "static/media/howTheWorldReallyWorksWide.jpg": "/static/media/howTheWorldReallyWorksWide.fed28e377271b044c9e3.jpg",
+    "static/media/timeVmasteryT.png": "/static/media/timeVmasteryT.e6993decbe2a011c47dc.png",
+    "static/media/profilePic.jpeg": "/static/media/profilePic.94873f5ece4c7e73ef12.jpeg",
+    "static/media/timeVmasteryM.png": "/static/media/timeVmasteryM.f7c441b3cea475cd033d.png",
+    "index.html": "/index.html",
+    "main.7741d6c3.css.map": "/static/css/main.7741d6c3.css.map",
+    "main.95e34ea5.js.map": "/static/js/main.95e34ea5.js.map",
+    "419.28c76944.chunk.js.map": "/static/js/419.28c76944.chunk.js.map",
+    "443.926d9d82.chunk.js.map": "/static/js/443.926d9d82.chunk.js.map",
+    "255.cf42ae83.chunk.js.map": "/static/js/255.cf42ae83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7741d6c3.css",
+    "static/js/main.95e34ea5.js"
+  ]
+}

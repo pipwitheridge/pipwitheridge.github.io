@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7741d6c3.css",
-    "main.js": "/static/js/main.d13332db.js",
+    "main.js": "/static/js/main.4dc10410.js",
     "static/js/419.1e898057.chunk.js": "/static/js/419.1e898057.chunk.js",
     "static/js/346.5a795218.chunk.js": "/static/js/346.5a795218.chunk.js",
     "static/js/443.bfdf12e7.chunk.js": "/static/js/443.bfdf12e7.chunk.js",
     "static/js/405.0a74bd2f.chunk.js": "/static/js/405.0a74bd2f.chunk.js",
     "static/js/255.cf42ae83.chunk.js": "/static/js/255.cf42ae83.chunk.js",
     "static/js/50.04847279.chunk.js": "/static/js/50.04847279.chunk.js",
+    "static/js/619.645833ad.chunk.js": "/static/js/619.645833ad.chunk.js",
     "static/js/816.c8220831.chunk.js": "/static/js/816.c8220831.chunk.js",
     "static/js/100.c1c69bc7.chunk.js": "/static/js/100.c1c69bc7.chunk.js",
     "static/js/893.b3f09e13.chunk.js": "/static/js/893.b3f09e13.chunk.js",
@@ -21,6 +22,8 @@
     "static/media/losingMyReligionWide.png": "/static/media/losingMyReligionWide.fd3a815d6e4390fc0100.png",
     "static/media/embracingComplementarianism.png": "/static/media/embracingComplementarianism.41ce8f270cdabccb3558.png",
     "static/media/salKhanWide.png": "/static/media/salKhanWide.a965da0faee34a7414c5.png",
+    "static/media/mooreCollegeReadingsWide.png": "/static/media/mooreCollegeReadingsWide.50f375b612729f9d2fef.png",
+    "static/media/mooreCollegeReadings.png": "/static/media/mooreCollegeReadings.a95600597d2a7e762d19.png",
     "static/media/briefHistoryOfTime.png": "/static/media/briefHistoryOfTime.ce649d920b9e020670b1.png",
     "static/media/theMoralLandscape.png": "/static/media/theMoralLandscape.46853ef6b7aadf9a4a01.png",
     "static/media/howTheWorldReallyWorks.jpg": "/static/media/howTheWorldReallyWorks.9e65524c779302d96e37.jpg",
@@ -34,19 +37,20 @@
     "static/media/timeVmasteryM.png": "/static/media/timeVmasteryM.f7c441b3cea475cd033d.png",
     "index.html": "/index.html",
     "main.7741d6c3.css.map": "/static/css/main.7741d6c3.css.map",
-    "main.d13332db.js.map": "/static/js/main.d13332db.js.map",
+    "main.4dc10410.js.map": "/static/js/main.4dc10410.js.map",
     "419.1e898057.chunk.js.map": "/static/js/419.1e898057.chunk.js.map",
     "346.5a795218.chunk.js.map": "/static/js/346.5a795218.chunk.js.map",
     "443.bfdf12e7.chunk.js.map": "/static/js/443.bfdf12e7.chunk.js.map",
     "405.0a74bd2f.chunk.js.map": "/static/js/405.0a74bd2f.chunk.js.map",
     "255.cf42ae83.chunk.js.map": "/static/js/255.cf42ae83.chunk.js.map",
     "50.04847279.chunk.js.map": "/static/js/50.04847279.chunk.js.map",
+    "619.645833ad.chunk.js.map": "/static/js/619.645833ad.chunk.js.map",
     "816.c8220831.chunk.js.map": "/static/js/816.c8220831.chunk.js.map",
     "100.c1c69bc7.chunk.js.map": "/static/js/100.c1c69bc7.chunk.js.map",
     "893.b3f09e13.chunk.js.map": "/static/js/893.b3f09e13.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7741d6c3.css",
-    "static/js/main.d13332db.js"
+    "static/js/main.4dc10410.js"
   ]
 }

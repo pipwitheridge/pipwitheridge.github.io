@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7741d6c3.css",
-    "main.js": "/static/js/main.810c36c9.js",
+    "main.js": "/static/js/main.db874fe9.js",
     "static/js/419.e67c8099.chunk.js": "/static/js/419.e67c8099.chunk.js",
     "static/js/346.d58f8b84.chunk.js": "/static/js/346.d58f8b84.chunk.js",
     "static/js/443.a8fff4e9.chunk.js": "/static/js/443.a8fff4e9.chunk.js",
@@ -11,6 +11,7 @@
     "static/js/619.5f826850.chunk.js": "/static/js/619.5f826850.chunk.js",
     "static/js/816.8a91cfb2.chunk.js": "/static/js/816.8a91cfb2.chunk.js",
     "static/js/50.0afeda7f.chunk.js": "/static/js/50.0afeda7f.chunk.js",
+    "static/js/484.4cb55970.chunk.js": "/static/js/484.4cb55970.chunk.js",
     "static/js/893.6db90029.chunk.js": "/static/js/893.6db90029.chunk.js",
     "static/js/383.dd0099e6.chunk.js": "/static/js/383.dd0099e6.chunk.js",
     "static/media/homelessnessInAustralia.png": "/static/media/homelessnessInAustralia.a6fc24f4e2aa42521316.png",
@@ -30,9 +31,11 @@
     "static/media/briefHistoryOfTime.png": "/static/media/briefHistoryOfTime.ce649d920b9e020670b1.png",
     "static/media/theMoralLandscape.png": "/static/media/theMoralLandscape.46853ef6b7aadf9a4a01.png",
     "static/media/howTheWorldReallyWorks.jpg": "/static/media/howTheWorldReallyWorks.9e65524c779302d96e37.jpg",
+    "static/media/theInnovatorsWide.png": "/static/media/theInnovatorsWide.c89a49ad3f673e2b4e67.png",
     "static/media/howTheWorldReallyWorksWide.jpg": "/static/media/howTheWorldReallyWorksWide.fed28e377271b044c9e3.jpg",
     "static/media/poorEconomics.png": "/static/media/poorEconomics.7193aa61fb0f2ae55479.png",
     "static/media/losingMyReligion.png": "/static/media/losingMyReligion.a9209a88a6309c8bf087.png",
+    "static/media/theInnovators.png": "/static/media/theInnovators.bb18e70fe737979dbeec.png",
     "static/media/myCoding.png": "/static/media/myCoding.5df57739e6cb973d2322.png",
     "static/media/myCodingWide.png": "/static/media/myCodingWide.fb9e8bc3df8a34af8204.png",
     "static/media/timeVmasteryT.png": "/static/media/timeVmasteryT.e6993decbe2a011c47dc.png",
@@ -40,7 +43,7 @@
     "static/media/timeVmasteryM.png": "/static/media/timeVmasteryM.f7c441b3cea475cd033d.png",
     "index.html": "/index.html",
     "main.7741d6c3.css.map": "/static/css/main.7741d6c3.css.map",
-    "main.810c36c9.js.map": "/static/js/main.810c36c9.js.map",
+    "main.db874fe9.js.map": "/static/js/main.db874fe9.js.map",
     "419.e67c8099.chunk.js.map": "/static/js/419.e67c8099.chunk.js.map",
     "346.d58f8b84.chunk.js.map": "/static/js/346.d58f8b84.chunk.js.map",
     "443.a8fff4e9.chunk.js.map": "/static/js/443.a8fff4e9.chunk.js.map",
@@ -50,11 +53,12 @@
     "619.5f826850.chunk.js.map": "/static/js/619.5f826850.chunk.js.map",
     "816.8a91cfb2.chunk.js.map": "/static/js/816.8a91cfb2.chunk.js.map",
     "50.0afeda7f.chunk.js.map": "/static/js/50.0afeda7f.chunk.js.map",
+    "484.4cb55970.chunk.js.map": "/static/js/484.4cb55970.chunk.js.map",
     "893.6db90029.chunk.js.map": "/static/js/893.6db90029.chunk.js.map",
     "383.dd0099e6.chunk.js.map": "/static/js/383.dd0099e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7741d6c3.css",
-    "static/js/main.810c36c9.js"
+    "static/js/main.db874fe9.js"
   ]
 }

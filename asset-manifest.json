@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.7741d6c3.css",
-    "main.js": "/static/js/main.f334928a.js",
+    "main.js": "/static/js/main.966a3407.js",
     "static/js/419.e67c8099.chunk.js": "/static/js/419.e67c8099.chunk.js",
     "static/js/346.d58f8b84.chunk.js": "/static/js/346.d58f8b84.chunk.js",
     "static/js/443.a8fff4e9.chunk.js": "/static/js/443.a8fff4e9.chunk.js",
     "static/js/405.3ac48080.chunk.js": "/static/js/405.3ac48080.chunk.js",
     "static/js/255.eb17865f.chunk.js": "/static/js/255.eb17865f.chunk.js",
-    "static/js/795.f9039f3c.chunk.js": "/static/js/795.f9039f3c.chunk.js",
+    "static/js/795.61968150.chunk.js": "/static/js/795.61968150.chunk.js",
     "static/js/619.5f826850.chunk.js": "/static/js/619.5f826850.chunk.js",
     "static/js/816.8a91cfb2.chunk.js": "/static/js/816.8a91cfb2.chunk.js",
     "static/js/50.0afeda7f.chunk.js": "/static/js/50.0afeda7f.chunk.js",
     "static/js/484.4cb55970.chunk.js": "/static/js/484.4cb55970.chunk.js",
     "static/js/893.6db90029.chunk.js": "/static/js/893.6db90029.chunk.js",
+    "static/js/176.9587a234.chunk.js": "/static/js/176.9587a234.chunk.js",
     "static/js/383.dd0099e6.chunk.js": "/static/js/383.dd0099e6.chunk.js",
     "static/media/homelessnessInAustralia.png": "/static/media/homelessnessInAustralia.a6fc24f4e2aa42521316.png",
     "static/media/workWide.png": "/static/media/workWide.1da5f652bb56bb106528.png",
@@ -35,7 +36,9 @@
     "static/media/howTheWorldReallyWorksWide.jpg": "/static/media/howTheWorldReallyWorksWide.fed28e377271b044c9e3.jpg",
     "static/media/poorEconomics.png": "/static/media/poorEconomics.7193aa61fb0f2ae55479.png",
     "static/media/losingMyReligion.png": "/static/media/losingMyReligion.a9209a88a6309c8bf087.png",
+    "static/media/purposeDrivenChurchWide.png": "/static/media/purposeDrivenChurchWide.9c97a596d7b25f34a7e2.png",
     "static/media/theInnovators.png": "/static/media/theInnovators.bb18e70fe737979dbeec.png",
+    "static/media/purposeDrivenChurch.png": "/static/media/purposeDrivenChurch.abe0c0354337b25c9f95.png",
     "static/media/myCoding.png": "/static/media/myCoding.5df57739e6cb973d2322.png",
     "static/media/myCodingWide.png": "/static/media/myCodingWide.fb9e8bc3df8a34af8204.png",
     "static/media/timeVmasteryT.png": "/static/media/timeVmasteryT.e6993decbe2a011c47dc.png",
@@ -43,22 +46,23 @@
     "static/media/timeVmasteryM.png": "/static/media/timeVmasteryM.f7c441b3cea475cd033d.png",
     "index.html": "/index.html",
     "main.7741d6c3.css.map": "/static/css/main.7741d6c3.css.map",
-    "main.f334928a.js.map": "/static/js/main.f334928a.js.map",
+    "main.966a3407.js.map": "/static/js/main.966a3407.js.map",
     "419.e67c8099.chunk.js.map": "/static/js/419.e67c8099.chunk.js.map",
     "346.d58f8b84.chunk.js.map": "/static/js/346.d58f8b84.chunk.js.map",
     "443.a8fff4e9.chunk.js.map": "/static/js/443.a8fff4e9.chunk.js.map",
     "405.3ac48080.chunk.js.map": "/static/js/405.3ac48080.chunk.js.map",
     "255.eb17865f.chunk.js.map": "/static/js/255.eb17865f.chunk.js.map",
-    "795.f9039f3c.chunk.js.map": "/static/js/795.f9039f3c.chunk.js.map",
+    "795.61968150.chunk.js.map": "/static/js/795.61968150.chunk.js.map",
     "619.5f826850.chunk.js.map": "/static/js/619.5f826850.chunk.js.map",
     "816.8a91cfb2.chunk.js.map": "/static/js/816.8a91cfb2.chunk.js.map",
     "50.0afeda7f.chunk.js.map": "/static/js/50.0afeda7f.chunk.js.map",
     "484.4cb55970.chunk.js.map": "/static/js/484.4cb55970.chunk.js.map",
     "893.6db90029.chunk.js.map": "/static/js/893.6db90029.chunk.js.map",
+    "176.9587a234.chunk.js.map": "/static/js/176.9587a234.chunk.js.map",
     "383.dd0099e6.chunk.js.map": "/static/js/383.dd0099e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7741d6c3.css",
-    "static/js/main.f334928a.js"
+    "static/js/main.966a3407.js"
   ]
 }

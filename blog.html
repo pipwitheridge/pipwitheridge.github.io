@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Pip Witheridge</title>
+    <link rel="stylesheet" href="./styles/big.css">
+    <link rel="stylesheet" href="./styles/small.css">    
+    <script src='https://kit.fontawesome.com/fedaa0c557.js' crossorigin='anonymous'></script>
+    <script src="./postData.js"></script>
+
+    <script>
+        var previewPostData = postData;
+        const loadPostPreviews = function() {
+            previewPostData.forEach((x) => {
+                var newEl = document.createElement('div');
+                newEl.classList.add("previewPost");
+                newEl.classList.add(x.postType);
+                newEl.innerHTML = `
+                <a href='blog/${x.URLTitle}'>
+                <div class="previewPostImgDiv"><img src='./images/${x.coverImage}' class="previewPostImg"></div>
+                <div class="previewCopy">
+                <div class="previewHeadline">${x.previewHeadline}</div>
+                <div class="previewBody">${x.previewBody}</div>
+                </div>
+                </a>
+                `
+                document.getElementById("previewPosts").appendChild(newEl);
+            })
+        }
+
+        window.onload = function() {
+            loadPostPreviews();
+            Object.assign(document.getElementById("allButton").style,{backgroundColor: "rgb(30, 30, 30)", color: "white"});
+        }
+
+        const handleMenuClick = function() {
+            document.getElementById("menuModal").style.display = "";
+            document.getElementById("menuModal").style.transition = "top 0.2s";
+            document.getElementsByClassName("mainContainer")[0].style.transition = "opacity 0.1s";
+            document.getElementById("menuModal").style.top = "0px";
+            document.getElementsByClassName("mainContainer")[0].style.opacity = "10%";
+        }
+
+        const handleMenuClose = function() {
+            document.getElementsByClassName("mainContainer")[0].style.opacity = "";
+            document.getElementById("menuModal").style.transition = "top 0.2s";
+            document.getElementById("menuModal").style.top = "-500px"
+        }
+
+        const handleTypeSelection = function(selectedPostType) {
+            var bookEls = previewPostData.filter((x) => x.postType === "books").length;
+            var blogEls = previewPostData.filter((x) => x.postType === "blog").length;
+            var allLength = previewPostData.length;
+            if(selectedPostType==="blog") {
+                Object.assign(document.getElementById("allButton").style,{backgroundColor: "rgb(170, 170, 170)"});
+                Object.assign(document.getElementById("booksButton").style,{backgroundColor: "rgb(170, 170, 170)"});
+                Object.assign(document.getElementById("blogsButton").style,{backgroundColor: "rgb(30, 30, 30)"});
+                for (let i = 0; i < bookEls; i++) {
+                    document.getElementsByClassName("books")[i].style.display = "none";
+                }
+                for (let i = 0; i < blogEls; i++) {
+                    document.getElementsByClassName("blog")[i].style.display = "";
+                }
+            }
+            if(selectedPostType==="books") {
+                Object.assign(document.getElementById("allButton").style,{backgroundColor: "rgb(170, 170, 170)"});
+                Object.assign(document.getElementById("blogsButton").style,{backgroundColor: "rgb(170, 170, 170)"});
+                Object.assign(document.getElementById("booksButton").style,{backgroundColor: "rgb(30, 30, 30)"});
+                for (let i = 0; i < blogEls; i++) {
+                    document.getElementsByClassName("blog")[i].style.display = "none";
+                }
+                for (let i = 0; i < bookEls; i++) {
+                    document.getElementsByClassName("books")[i].style.display = "";
+                }
+            }
+            if(selectedPostType==="all") {
+                Object.assign(document.getElementById("blogsButton").style,{backgroundColor: "rgb(170, 170, 170)"});
+                Object.assign(document.getElementById("booksButton").style,{backgroundColor: "rgb(170, 170, 170)"});
+                Object.assign(document.getElementById("allButton").style,{backgroundColor: "rgb(30, 30, 30)"});
+                for (let i = 0; i < allLength; i++) {
+                    document.getElementsByClassName("previewPost")[i].style.display = "";
+                }
+            }
+        }
+
+    </script>
+    
+</head>
+<body>
+    <div class="mainContainer">
+    <div id="homeRow1">
+        <div id="profileName"><a href="/"><span id="pip">Pip</span>Witheridge</a></div>
+        <div id="navIcon"><i class="fa-solid fa-bars" onclick="handleMenuClick()"></i></div>
+    </div>
+    <div id="homeRow2">
+        <div id="homeTagline">blog posts and book reviews</div>
+    </div>
+    <div class="blogFilterButtonContainer">
+        <div class="blogFilterButton" id="allButton" onClick="handleTypeSelection('all')">All</div>
+        <div class="blogFilterButton" id="blogsButton" onClick="handleTypeSelection('blog')">Blog Posts</div>
+        <div class="blogFilterButton" id="booksButton" onClick="handleTypeSelection('books')">Book Reviews</div>
+    </div>
+    <div id="homeRow3Blog">
+        <div id="latestPost">
+            <div id="previewPosts"></div>
+        </div>
+    </div>
+    </div>
+    <div id="menuModal">
+        <div id="menuCloseButton"><i class="fa-solid fa-square-xmark" onclick="handleMenuClose()"></i></div>
+        <a href="./about.html" class="menuItem"><div class="menuItemDiv">About</div></a>
+        <a href="./blog.html" class="menuItem"><div class="menuItemDiv">Blog</div></a>
+        <a href="./tools.html" class="menuItem"><div class="menuItemDiv">Tools</div></a>
+    </div>
+</body>
+</html>

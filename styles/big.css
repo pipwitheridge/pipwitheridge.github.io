@@ -1,0 +1,272 @@
+@media only screen and (min-width: 801px) {
+
+    body {
+        font-family: "Inter", sans-serif;
+        background-color: rgb(245, 245, 245);
+        color: rgb(30, 30, 30);
+        padding-bottom: 200px;
+    }
+
+    .mainContainer {
+        padding-inline: 10%;
+    }
+
+    
+    #homeRow1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #profileName {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    #profileName:hover {
+        text-decoration: underline;
+    }
+    
+    #pip {
+        font-weight: 200;
+    }
+    
+    .fa-bars {
+        font-size: 24px;
+    }
+
+    .fa-bars:hover {
+        cursor: pointer;
+        font-size: 26px;
+    }
+    
+    #menuModal {
+        position: fixed;
+        top: -500px;
+        left: 0;
+        background-color: rgb(30, 30, 30);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-block: 20px;
+        align-items: center;
+    }
+    
+    #menuCloseButton {
+        width: 90%;
+        text-align: right;
+        font-size: 40px;
+        color: rgb(245, 245, 245);
+    }
+
+    .fa-square-xmark:hover {
+        cursor: pointer;
+        color: rgb(170, 170, 170);
+    }
+    
+    .menuItem {
+        width: 80%;
+        background-color: rgb(245, 245, 245);
+        color: rgb(30, 30, 30);
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .menuItem:hover {
+        cursor: pointer;
+        background-color: rgb(170, 170, 170);
+        text-decoration: underline;
+    }
+    
+    .menuItemDiv {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #homeTagline {
+        font-size: 50px;
+        font-weight: 800;
+    }
+    
+    #homeRow2 {
+        margin-top: 50px;
+        text-align: center;
+        padding-inline: 20px;
+    }
+    
+    #homeRow3 {
+        margin-top: 50px;
+    }
+    
+    #homeRow3Blog {
+        margin-top: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(30, 30, 30);
+    }
+    
+    .header {
+        font-size: 30px;
+        font-weight: 200;
+    }
+
+    #previewPosts {
+       display: flex;
+       flex-wrap: wrap;
+    }
+    
+    .previewPost {
+        max-width: 200px;
+        margin-right: 25px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .previewPost:hover {
+        text-decoration: underline;
+    }
+    
+    .previewPostImg {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .previewPostImgDiv {
+    }
+    
+    .previewCopy {
+        width: 200px;
+    }
+    
+    .previewHeadline {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .previewBody {
+        margin-top: 4px;
+    }
+
+    #blogRow2 {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+    }
+    
+    .blogImg {
+        width: 300px;
+        border-radius: 10px;
+        margin-right: 24px;
+    }
+    
+    #postType {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    
+    .blogImgDiv {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;    
+    }
+    
+    #postTitle {
+        margin-top: 24px;
+        font-size: 56px;
+        font-weight: 800;
+    }
+    
+    #postByline {
+        margin-top: 8px;
+        font-size: 32px;
+    }
+    
+    #postCopy {
+        margin-top: 20px;
+        line-height: 30px;
+    }
+    
+    #aboutImg {
+        width: 200px;
+        border-radius: 10px;
+    }
+    
+    .aboutBio {
+        line-height: 30px;
+    }
+    
+    #aboutImgDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #toolPreview {
+        margin-top: 40px;
+    }
+    
+    .toolHeader {
+        width: 400px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .toolHeader:hover {
+        text-decoration: underline;
+    }
+    
+    .bodyCopy {
+        margin-top: 12px;
+        line-height: 32px;
+    }
+    
+    .blogFilterButtonContainer {
+        display: flex;
+    }
+    
+    .blogFilterButton {
+        padding: 10px;
+        border-radius: 10px;
+        color: rgb(245, 245, 245);
+        margin-top: 60px;
+        margin-right: 10px;
+        background-color: rgb(170, 170, 170);
+        min-width: 50px;
+        text-align: center;
+    }
+
+    .blogFilterButton:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #morePostsButton {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #morePostsButton:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .blockEl {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+    
+    
+    }
+    
+    

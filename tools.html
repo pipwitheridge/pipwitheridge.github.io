@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Pip Witheridge</title>
+    <link rel="stylesheet" href="./styles/big.css">
+    <link rel="stylesheet" href="./styles/small.css">    
+    <script src='https://kit.fontawesome.com/fedaa0c557.js' crossorigin='anonymous'></script>
+    <script src="./postData.js"></script>
+
+    <script>
+
+        const handleMenuClick = function() {
+            document.getElementById("menuModal").style.display = "";
+            document.getElementById("menuModal").style.transition = "top 0.2s";
+            document.getElementsByClassName("mainContainer")[0].style.transition = "opacity 0.1s";
+            document.getElementById("menuModal").style.top = "0px";
+            document.getElementsByClassName("mainContainer")[0].style.opacity = "10%";
+        }
+
+        const handleMenuClose = function() {
+            document.getElementsByClassName("mainContainer")[0].style.opacity = "";
+            document.getElementById("menuModal").style.transition = "top 0.2s";
+            document.getElementById("menuModal").style.top = "-500px"
+        }
+
+    </script>
+    
+</head>
+<body>
+    <div class="mainContainer">
+    <div id="homeRow1">
+        <div id="profileName"><a href="/"><span id="pip">Pip</span>Witheridge</a></div>
+        <div id="navIcon"><i class="fa-solid fa-bars" onclick="handleMenuClick()"></i></div>
+    </div>
+    <div id="homeRow2">
+        <div id="homeTagline">tools for discipleship</div>
+    </div>
+    <div id="homeRow3">
+        <div id="toolPreview">
+            <a class="toolHeader previewTindel" href="https://pipwitheridge.github.io/tindel-web"><div>Tindel ></div></a>
+            <div class="bodyCopy">I made this application to help me learn Biblical Greek and Hebrew. It works as an interlinear Bible with filters to allow users to test themselves on verses which suit their skill level and vocabulary knowledge. It's available on app stores, but the web version is best.</div>
+        </div>
+        <div id="toolPreview">
+            <a class="toolHeader previewGospelTraining" href="https://pipwitheridge.github.io/gospeltraining"><div>Gospel Training ></div></a>
+            <div class="bodyCopy">I made this simple lesson platform to share content via videos and short quizzes, to help people learn the Bible and ministry skills at their own pace. Currently it focuses on evangelism training.</div>
+        </div>
+    </div>
+    </div>
+    <div id="menuModal">
+        <div id="menuCloseButton"><i class="fa-solid fa-square-xmark" onclick="handleMenuClose()"></i></div>
+        <a href="./about.html" class="menuItem"><div class="menuItemDiv">About</div></a>
+        <a href="./blog.html" class="menuItem"><div class="menuItemDiv">Blog</div></a>
+        <a href="./tools.html" class="menuItem"><div class="menuItemDiv">Tools</div></a>
+    </div>
+</body>
+</html>

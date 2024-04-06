@@ -1,5 +1,13 @@
 var postData = [
   {
+    "postType": "blog",
+    "postDate": "6th April 2024",
+    "previewHeadline": "Interested is interesting",
+    "previewBody": "A key for an evangelistic mindset.",
+    "URLTitle": "interested-is-interesting",
+    "coverImage": "interestedInteresting.png"
+  }, 
+  {
     "postType": "books",
     "postDate": "26th January 2024",
     "bookTitle": "Mere Evangelism",

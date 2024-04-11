@@ -11,37 +11,12 @@
     <link rel="stylesheet" href="./styles/small.css">    
     <script src='https://kit.fontawesome.com/fedaa0c557.js' crossorigin='anonymous'></script>
     <script src="./postData.js"></script>
-
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XD03E57PD"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-7XD03E57PD');
-        </script>
+    <script src="./universalFunctions.js"></script>    
 
     <script>
-        const previewPostData = postData.slice(0, 5)
-        const loadPostPreviews = function() {
-            previewPostData.forEach((x) => {
-                var newEl = document.createElement('div');
-                newEl.classList.add("previewPost");
-                newEl.innerHTML = `
-                <a href='blog/${x.URLTitle}'>
-                <div class="previewPostImgDiv"><img src='./images/${x.coverImage}' class="previewPostImg"></div>
-                <div class="previewCopy">
-                <div class="previewHeadline">${x.previewHeadline}</div>
-                <div class="previewBody">${x.previewBody}</div>
-                </div>
-                </a>
-                `
-                document.getElementById("previewPosts").appendChild(newEl);
-            })
-        }
 
         window.onload = function() {
-            loadPostPreviews();
+            universalFunctions();
         }
 
         const handleMenuClick = function() {

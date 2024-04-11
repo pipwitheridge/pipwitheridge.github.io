@@ -11,16 +11,7 @@
     <link rel="stylesheet" href="./styles/small.css">    
     <script src='https://kit.fontawesome.com/fedaa0c557.js' crossorigin='anonymous'></script>
     <script src="./postData.js"></script>
-
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XD03E57PD"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', 'G-7XD03E57PD');
-        </script>
+    <script src="./universalFunctions.js"></script>    
 
     <script>
 
@@ -36,6 +27,10 @@
             document.getElementsByClassName("mainContainer")[0].style.opacity = "";
             document.getElementById("menuModal").style.transition = "top 0.2s";
             document.getElementById("menuModal").style.top = "-500px"
+        }
+
+        window.onload = function() {
+            universalFunctions();
         }
 
     </script>

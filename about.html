@@ -19,29 +19,12 @@
             universalFunctions();
         }
 
-        const handleMenuClick = function() {
-            document.getElementById("menuModal").style.display = "";
-            document.getElementById("menuModal").style.transition = "top 0.2s";
-            document.getElementsByClassName("mainContainer")[0].style.transition = "opacity 0.1s";
-            document.getElementById("menuModal").style.top = "0px";
-            document.getElementsByClassName("mainContainer")[0].style.opacity = "10%";
-        }
-
-        const handleMenuClose = function() {
-            document.getElementsByClassName("mainContainer")[0].style.opacity = "";
-            document.getElementById("menuModal").style.transition = "top 0.2s";
-            document.getElementById("menuModal").style.top = "-500px"
-        }
-
     </script>
     
 </head>
 <body>
     <div class="mainContainer">
-        <div id="homeRow1">
-            <div id="profileName"><a href="/"><span id="pip">Pip</span>Witheridge</a></div>
-            <div id="navIcon"><i class="fa-solid fa-bars" onclick="handleMenuClick()"></i></div>
-            </div>
+        <div id="homeRow1"></div>
     <div id="homeRow3">
         <div class="aboutBio">
             I'm a theology student, studying at Moore College. I'm interested in biblical studies, faith, ministry, etc. My hope is to help people grow as disciples of Jesus.
@@ -54,12 +37,6 @@
             <img id="aboutImg" src="./images/pipFace.png">
         </div>
     </div>
-    </div>
-    <div id="menuModal">
-        <div id="menuCloseButton"><i class="fa-solid fa-square-xmark" onclick="handleMenuClose()"></i></div>
-        <a href="./about.html" class="menuItem"><div class="menuItemDiv">About</div></a>
-        <a href="./blog.html" class="menuItem"><div class="menuItemDiv">Blog</div></a>
-        <a href="./tools.html" class="menuItem"><div class="menuItemDiv">Tools</div></a>
     </div>
 </body>
 </html>

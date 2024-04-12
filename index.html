@@ -13,16 +13,6 @@
     <script src="./postData.js"></script>
     <script src="./universalFunctions.js"></script>    
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XD03E57PD"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7XD03E57PD');
-    </script>
-
     <script>
         const previewPostData = postData.slice(0, 5)
         const loadPostPreviews = function() {
@@ -47,29 +37,12 @@
             universalFunctions();
         }
 
-        const handleMenuClick = function() {
-            document.getElementById("menuModal").style.display = "";
-            document.getElementById("menuModal").style.transition = "top 0.2s";
-            document.getElementsByClassName("mainContainer")[0].style.transition = "opacity 0.1s";
-            document.getElementById("menuModal").style.top = "0px";
-            document.getElementsByClassName("mainContainer")[0].style.opacity = "10%";
-        }
-
-        const handleMenuClose = function() {
-            document.getElementsByClassName("mainContainer")[0].style.opacity = "";
-            document.getElementById("menuModal").style.transition = "top 0.2s";
-            document.getElementById("menuModal").style.top = "-500px"
-        }
-
     </script>
     
 </head>
 <body>
     <div class="mainContainer">
-    <div id="homeRow1">
-    <div id="profileName"><span id="pip">Pip</span>Witheridge</div>
-    <div id="navIcon"><i class="fa-solid fa-bars" onclick="handleMenuClick()"></i></div>
-    </div>
+    <div id="homeRow1"> </div>
     <div id="homeRow2">
         <div id="homeTagline">resources for discipleship</div>
     </div>
@@ -80,12 +53,6 @@
             <div id="morePostsButton"><a href="./blog.html">More Posts ></a></div>
         </div>
     </div>
-    </div>
-    <div id="menuModal">
-        <div id="menuCloseButton"><i class="fa-solid fa-square-xmark" onclick="handleMenuClose()"></i></div>
-        <a href="./about.html" class="menuItem"><div class="menuItemDiv">About</div></a>
-        <a href="./blog.html" class="menuItem"><div class="menuItemDiv">Blog</div></a>
-        <a href="./tools.html" class="menuItem"><div class="menuItemDiv">Tools</div></a>
     </div>
 </body>
 </html>

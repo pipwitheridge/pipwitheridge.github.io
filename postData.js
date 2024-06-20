@@ -1,6 +1,14 @@
 var postData = [
   {
     "postType": "blog",
+    "postDate": "20th June 2024",
+    "previewHeadline": "Working while we wait",
+    "previewBody": "Commentary on 1 Thess. 4:9-12.",
+    "URLTitle": "working-while-we-wait",
+    "coverImage": "workingWhileWeWait.png"
+  }, 
+  {
+    "postType": "blog",
     "postDate": "6th April 2024",
     "previewHeadline": "Interested is interesting",
     "previewBody": "A key for an evangelistic mindset.",

@@ -6,9 +6,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>PW</title> 
+    <title>Pip Witheridge</title>
+    <link rel="stylesheet" href="./styles/big.css">
+    <link rel="stylesheet" href="./styles/small.css">    
+    <script src='https://kit.fontawesome.com/fedaa0c557.js' crossorigin='anonymous'></script>
+    <script src="./postData.js"></script>
+    <script src="./universalFunctions.js"></script>    
+
+    <script>
+        const previewPostData = postData.slice(0, 10)
+        const loadPostPreviews = function() {
+            previewPostData.forEach((x) => {
+                var newEl = document.createElement('div');
+                newEl.classList.add("previewPost");
+                newEl.innerHTML = `
+                <a href='blog/${x.URLTitle}'>
+                <div class="previewPostImgDiv"><img src='./images/${x.coverImage}' class="previewPostImg"></div>
+                <div class="previewCopy">
+                <div class="previewHeadline">${x.previewHeadline}</div>
+                <div class="previewBody">${x.previewBody}</div>
+                </div>
+                </a>
+                `
+                document.getElementById("previewPosts").appendChild(newEl);
+            })
+        }
+
+        window.onload = function() {
+            loadPostPreviews();
+            universalFunctions();
+        }
+
+    </script>
+    
 </head>
 <body>
-    <div class="mainContainer">Hi</div>
+    <div class="mainContainer">
+    <div id="homeRow1"> </div>
+    <div id="homeRow2">
+        <div id="homeTagline">exploring Christian faith & life</div>
+    </div>
+    <div id="homeRow3">
+        <div id="latestPost">
+            <div class="header">Latest Blog Posts</div>
+            <div id="previewPosts"></div>
+            <div id="morePostsButton"><a href="./blog.html">More Posts ></a></div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
